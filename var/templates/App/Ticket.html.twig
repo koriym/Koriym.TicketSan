@@ -1,0 +1,12 @@
+{% if ticket %}
+    <h2>/tickets/{{ ticket.id }}</h2>
+    <ul>
+        <li>{{ ticket.title }}</li>
+        <li>{{ ticket.description }}</li>
+        <li>{{ ticket.assignee }}</li>
+        <li>{{ ticket.created|date("Y/m/d H:i:s") }}</li>
+        <li>{{ ticket.updated|date("Y/m/d H:i:s") }}</li>
+    </ul>
+{% else %}
+     No Ticket Found
+{% endif %}

@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "tickets.json",
+  "title": "Collection of Tickets",
+  "type": "array",
+  "items": {
+    "$ref": "ticket.json"
+  }
+}

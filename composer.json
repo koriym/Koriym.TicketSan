@@ -7,7 +7,15 @@
         "php": ">=7.0.0",
         "roave/security-advisories": "dev-master",
         "bear/package": "^1.5",
-        "josegonzalez/dotenv": "^2.1"
+        "josegonzalez/dotenv": "^2.1",
+        "ray/aura-sql-module": "^1.6",
+        "madapaja/twig-module": "^2.0",
+        "ray/web-form-module": "^0.5.5",
+        "koriym/now": "^1.0",
+        "koriym/query-locator": "^1.3",
+        "koriym/http-constants": "^1.0",
+        "bear/aura-router-module": "^2.0",
+        "bear/api-doc": "^0.1.1"
     },
     "require-dev": {
         "bear/qatools": "^1.4.2",
@@ -34,6 +42,7 @@
             "phpcbf src"
         ],
         "serve": "php -S 127.0.0.1:8080 -t public",
+        "serve-api": "php -S 127.0.0.1:8081 bootstrap/api.php",
         "api": "php bootstrap/api.php",
         "web": "php bootstrap/web.php"
     }
