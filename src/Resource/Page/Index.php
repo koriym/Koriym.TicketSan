@@ -5,11 +5,14 @@ use BEAR\Resource\ResourceObject;
 
 class Index extends ResourceObject
 {
+    public $code = 301;
+
+    public $headers = [
+        'Location' => '/tickets'
+    ];
+
     public function onGet() : ResourceObject
     {
-        $this->code = 301;
-        $this->headers['Location'] = '/tickets';
-
         return $this;
     }
 }
