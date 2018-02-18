@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7df3c13453d3264ce2fc49e14a88b132",
+    "content-hash": "576731a43461c2af85c92bdb8dc689fa",
     "packages": [
         {
             "name": "aura/cli",
@@ -2893,16 +2893,16 @@
     "packages-dev": [
         {
             "name": "bear/qatools",
-            "version": "1.4.8",
+            "version": "1.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.QATools.git",
-                "reference": "a1a0a3d159838475784345eb11e32c765bf28715"
+                "reference": "2e081a79d6349ed5ebbbc87783a55076c4a655bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.QATools/zipball/a1a0a3d159838475784345eb11e32c765bf28715",
-                "reference": "a1a0a3d159838475784345eb11e32c765bf28715",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.QATools/zipball/2e081a79d6349ed5ebbbc87783a55076c4a655bb",
+                "reference": "2e081a79d6349ed5ebbbc87783a55076c4a655bb",
                 "shasum": ""
             },
             "require": {
@@ -2930,7 +2930,7 @@
                 "php",
                 "qa"
             ],
-            "time": "2018-01-11T01:57:14+00:00"
+            "time": "2018-02-18T08:11:15+00:00"
         },
         {
             "name": "composer/semver",
