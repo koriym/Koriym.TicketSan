@@ -11,7 +11,7 @@
 
 Post ticket
 ```
-php bootstrap/api.php post 'app://self/ticket?title=title1'
+composer api post 'app://self/ticket?title=title1'
 ```
 
 ```
@@ -22,7 +22,7 @@ content-type: application/hal+json
 
 Get created ticket
 ```
-php bootstrap/api.php get 'app://self/tickets/16'
+composer api get 'app://self/tickets/16'
 ```
 
 ```
@@ -51,7 +51,7 @@ content-type: application/hal+json
 
 Get all tickets
 ```
-php bootstrap/api.php get 'app://self/tickets'
+composer api get 'app://self/tickets'
 ```
 
 ## Web-API
