@@ -31,30 +31,4 @@ class Ticket extends ResourceObject
 
         return $this;
     }
-
-    /**
-     * @Assisted("now")
-     * @ReturnCreatedResource
-     */
-    public function onPost(
-        string $title,
-        string $description = '',
-        string $assignee = '',
-        NowInterface $now = null
-    ) : ResourceObject {
-        $value = [
-            'title' => $title,
-            'description' => $description,
-            'assignee' => $assignee,
-            'status' => '',
-            'created' => (string) $now,
-            'updated' => (string) $now,
-        ];
-        $this->pdo->perform($this->query['ticket_insert'], $value);
-        $id = $this->pdo->lastInsertId();
-        $this->code = StatusCode::CREATED;
-        $this->headers[ResponseHeader::LOCATION] = "/ticket?id={$id}";
-
-        return $this;
-    }
 }

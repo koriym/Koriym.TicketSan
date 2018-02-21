@@ -11,7 +11,7 @@
 
 Post ticket
 ```
-composer api post 'app://self/ticket?title=title1'
+composer api post 'app://self/tickets?title=title1'
 ```
 
 ```

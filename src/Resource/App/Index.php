@@ -17,7 +17,7 @@ class Index extends ResourceObject
                 'templated' => true
             ],
             'kt:ticket' => [
-                'href' => '/ticket',
+                'href' => '/tickets/{id}',
                 'title' => 'tickets item',
                 'templated' => true
             ],

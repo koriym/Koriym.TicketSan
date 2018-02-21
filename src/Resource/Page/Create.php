@@ -41,7 +41,7 @@ class Create extends ResourceObject
      * Create ticket
      *
      * @FormValidation(form="form", onFailure="onFailure")
-     * @Link(rel="create", href="app://self/ticket", method="post")
+     * @Link(rel="create", href="app://self/tickets", method="post")
      */
     public function onPost(
         string $title,
