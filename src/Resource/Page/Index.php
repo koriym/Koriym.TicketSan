@@ -8,7 +8,7 @@ class Index extends ResourceObject
     public $code = 301;
 
     public $headers = [
-        'Location' => '/tickets/'
+        'Location' => '/tickets'
     ];
 
     public function onGet() : ResourceObject
