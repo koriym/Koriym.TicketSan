@@ -27,12 +27,18 @@ class Ticket extends ResourceObject
     private $ticketInsert;
     
     /**
+     * @var NowInterface
+     */
+    private $now;
+    
+    /**
      * @Named("ticketSelect=ticket_select, ticketInsert=ticket_insert")
      */
-    public function __construct(callable $ticketSelect, callable $ticketInsert)
+    public function __construct(callable $ticketSelect, callable $ticketInsert, NowInterface $now)
     {
         $this->ticketSelect = $ticketSelect;
         $this->ticketInsert = $ticketInsert;
+        $this->now = $now;
     }
     
     /**
@@ -53,7 +59,6 @@ class Ticket extends ResourceObject
     }
 
     /**
-     * @Assisted("now")
      * @ReturnCreatedResource
      */
     public function onPost(
@@ -67,8 +72,8 @@ class Ticket extends ResourceObject
             'description' => $description,
             'assignee' => $assignee,
             'status' => '',
-            'created' => (string) $now,
-            'updated' => (string) $now,
+            'created' => (string) $this->now,
+            'updated' => (string) $this->now,
         ]);
         $id = $this->pdo->lastInsertId();
         $this->code = StatusCode::CREATED;
