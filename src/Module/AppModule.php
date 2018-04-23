@@ -10,6 +10,7 @@ use Koriym\QueryLocator\QueryLocatorModule;
 use Koriym\TicketSan\Form\TicketForm;
 use Ray\AuraSqlModule\AuraSqlModule;
 use Ray\Di\AbstractModule;
+use Ray\Query\SqlQueryModule;
 use Ray\WebFormModule\AuraInputModule;
 use Ray\WebFormModule\FormInterface;
 
@@ -37,6 +38,7 @@ class AppModule extends AbstractModule
         $this->install(new AuraInputModule);
         $this->bind(TicketForm::class);
         $this->bind(FormInterface::class)->annotatedWith('ticket_form')->to(TicketForm::class);
+        $this->install(new SqlQueryModule($appDir . '/var/sql'));
         $this->install(new PackageModule);
     }
 }
