@@ -6,3 +6,5 @@
 /vendor/
 /build/
 phpunit.xml
+/var/tmp/
+!/var/tmp/.gitkeep
