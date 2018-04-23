@@ -7,30 +7,28 @@ use BEAR\Resource\ResourceObject;
 use Koriym\HttpConstants\ResponseHeader;
 use Koriym\HttpConstants\StatusCode;
 use Koriym\Now\NowInterface;
-use Koriym\QueryLocator\QueryLocatorInject;
 use Ray\AuraSqlModule\AuraSqlInject;
-use Ray\Di\Di\Assisted;
 use Ray\Di\Di\Named;
 
 class Ticket extends ResourceObject
 {
     use AuraSqlInject;
-    
+
     /**
      * @var callable
      */
     private $ticketSelect;
-    
+
     /**
      * @var callable
      */
     private $ticketInsert;
-    
+
     /**
      * @var NowInterface
      */
     private $now;
-    
+
     /**
      * @Named("ticketSelect=ticket_select, ticketInsert=ticket_insert")
      */
@@ -40,13 +38,12 @@ class Ticket extends ResourceObject
         $this->ticketInsert = $ticketInsert;
         $this->now = $now;
     }
-    
+
     /**
      * @JsonSchema(key="ticket", schema="ticket.json")
      */
     public function onGet(string $id) : ResourceObject
     {
-        
         $ticket = ($this->ticketSelect)(['id' => $id])[0];
         if (! $ticket) {
             $this->code = StatusCode::NOT_FOUND;
@@ -64,8 +61,7 @@ class Ticket extends ResourceObject
     public function onPost(
         string $title,
         string $description = '',
-        string $assignee = '',
-        NowInterface $now = null
+        string $assignee = ''
     ) : ResourceObject {
         ($this->ticketInsert)([
             'title' => $title,

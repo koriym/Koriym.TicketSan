@@ -11,6 +11,8 @@ class Ticket extends ResourceObject
      */
     public function onGet(int $id) : ResourceObject
     {
+        unset($id);
+
         return $this;
     }
 }
