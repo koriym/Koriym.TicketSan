@@ -1,6 +1,7 @@
 <?php
 namespace Koriym\TicketSan\Form;
 
+use Aura\Html\Helper\Input;
 use Aura\Html\Helper\Tag;
 use Ray\WebFormModule\AbstractForm;
 
@@ -12,36 +13,38 @@ class TicketForm extends AbstractForm
             'method' => 'post',
             'action' => '/create',
         ]);
-        /* @var Tag $tag */
+        /** @var Tag $tag */
         $tag = $this->helper->get('tag');
+        /** @var Input $input */
+        $input = $this->input;
         $form .= $tag('div', ['class' => 'form-group']);
-        $form .= $this->helper->tag('label', ['for' => 'title']);
+        $form .= $tag('label', ['for' => 'title']);
         $form .= 'Title';
-        $form .= $this->helper->tag('/label') . PHP_EOL;
-        $form .= $this->input('title');
+        $form .= $tag('/label') . PHP_EOL;
+        $form .= $input('title');
         $form .= $this->error('title');
-        $form .= $this->helper->tag('/div') . PHP_EOL;
+        $form .= $tag('/div') . PHP_EOL;
 
         $form .= $tag('div', ['class' => 'form-group']);
-        $form .= $this->helper->tag('label', ['for' => 'title']);
+        $form .= $tag('label', ['for' => 'title']);
         $form .= 'Description';
-        $form .= $this->helper->tag('/label') . PHP_EOL;
+        $form .= $tag('/label') . PHP_EOL;
 
-        $form .= $this->input('description');
+        $form .= $input('description');
         $form .= $this->error('description');
-        $form .= $this->helper->tag('/div') . PHP_EOL;
+        $form .= $tag('/div') . PHP_EOL;
 
         $form .= $tag('div', ['class' => 'form-group']);
-        $form .= $this->helper->tag('label', ['for' => 'title']);
+        $form .= $tag('label', ['for' => 'title']);
         $form .= 'Assignee';
-        $form .= $this->helper->tag('/label') . PHP_EOL;
-        $form .= $this->input('assignee');
+        $form .= $tag('/label') . PHP_EOL;
+        $form .= $input('assignee');
         $form .= $this->error('assignee');
-        $form .= $this->helper->tag('/div') . PHP_EOL;
+        $form .= $tag('/div') . PHP_EOL;
 
         // submit
-        $form .= $this->input('submit');
-        $form .= $this->helper->tag('/form');
+        $form .= $input('submit');
+        $form .= $tag('/form');
 
         return $form;
     }
