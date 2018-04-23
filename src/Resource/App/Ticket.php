@@ -10,18 +10,38 @@ use Koriym\Now\NowInterface;
 use Koriym\QueryLocator\QueryLocatorInject;
 use Ray\AuraSqlModule\AuraSqlInject;
 use Ray\Di\Di\Assisted;
+use Ray\Di\Di\Named;
 
 class Ticket extends ResourceObject
 {
     use AuraSqlInject;
-    use QueryLocatorInject;
-
+    
+    /**
+     * @var callable
+     */
+    private $ticketSelect;
+    
+    /**
+     * @var callable
+     */
+    private $ticketInsert;
+    
+    /**
+     * @Named("ticketSelect=ticket_select, ticketInsert=ticket_insert")
+     */
+    public function __construct(callable $ticketSelect, callable $ticketInsert)
+    {
+        $this->ticketSelect = $ticketSelect;
+        $this->ticketInsert = $ticketInsert;
+    }
+    
     /**
      * @JsonSchema(key="ticket", schema="ticket.json")
      */
     public function onGet(string $id) : ResourceObject
     {
-        $ticket = $this->pdo->fetchOne($this->query['ticket_select'], ['id' => $id]);
+        
+        $ticket = ($this->ticketSelect)(['id' => $id])[0];
         if (! $ticket) {
             $this->code = StatusCode::NOT_FOUND;
 
@@ -42,15 +62,14 @@ class Ticket extends ResourceObject
         string $assignee = '',
         NowInterface $now = null
     ) : ResourceObject {
-        $value = [
+        ($this->ticketInsert)([
             'title' => $title,
             'description' => $description,
             'assignee' => $assignee,
             'status' => '',
             'created' => (string) $now,
             'updated' => (string) $now,
-        ];
-        $this->pdo->perform($this->query['ticket_insert'], $value);
+        ]);
         $id = $this->pdo->lastInsertId();
         $this->code = StatusCode::CREATED;
         $this->headers[ResponseHeader::LOCATION] = "/ticket?id={$id}";
