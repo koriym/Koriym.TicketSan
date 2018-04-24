@@ -2402,18 +2402,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.QueryModule.git",
-                "reference": "ff1ad10885c5510a1d3cc1c8a69963dbd93df8c1"
+                "reference": "992ab8069ef0bbf3707c780888b5d53c95438ce8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.QueryModule/zipball/ff1ad10885c5510a1d3cc1c8a69963dbd93df8c1",
-                "reference": "ff1ad10885c5510a1d3cc1c8a69963dbd93df8c1",
+                "url": "https://api.github.com/repos/ray-di/Ray.QueryModule/zipball/992ab8069ef0bbf3707c780888b5d53c95438ce8",
+                "reference": "992ab8069ef0bbf3707c780888b5d53c95438ce8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.0",
                 "ray/aura-sql-module": "^1.6",
-                "ray/di": "^2.6"
+                "ray/di": "^2.6.6"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.11",
@@ -2447,7 +2447,7 @@
                 "Skeleton",
                 "psr"
             ],
-            "time": "2018-04-23T06:08:14+00:00"
+            "time": "2018-04-24T11:38:26+00:00"
         },
         {
             "name": "ray/web-form-module",
