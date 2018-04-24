@@ -17,7 +17,7 @@ class Ticket extends ResourceObject
     /**
      * @var callable
      */
-    private $ticketSelect;
+    private $ticketItem;
 
     /**
      * @var callable
@@ -30,11 +30,11 @@ class Ticket extends ResourceObject
     private $now;
 
     /**
-     * @Named("ticketSelect=ticket_select, ticketInsert=ticket_insert")
+     * @Named("ticketItem=ticket_item_by_id, ticketInsert=ticket_insert")
      */
-    public function __construct(callable $ticketSelect, callable $ticketInsert, NowInterface $now)
+    public function __construct(callable $ticketItem, callable $ticketInsert, NowInterface $now)
     {
-        $this->ticketSelect = $ticketSelect;
+        $this->ticketItem = $ticketItem;
         $this->ticketInsert = $ticketInsert;
         $this->now = $now;
     }
@@ -44,7 +44,7 @@ class Ticket extends ResourceObject
      */
     public function onGet(string $id) : ResourceObject
     {
-        $ticket = ($this->ticketSelect)(['id' => $id])[0];
+        $ticket = ($this->ticketItem)(['id' => $id]);
         if (! $ticket) {
             $this->code = StatusCode::NOT_FOUND;
 
