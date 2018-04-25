@@ -9,15 +9,11 @@ use Koriym\HttpConstants\StatusCode;
 use Koriym\Now\NowInterface;
 use Ray\AuraSqlModule\AuraSqlInject;
 use Ray\Di\Di\Named;
+use Ray\Query\Annotation\AliasQuery;
 
 class Ticket extends ResourceObject
 {
     use AuraSqlInject;
-
-    /**
-     * @var callable
-     */
-    private $ticketItem;
 
     /**
      * @var callable
@@ -30,29 +26,20 @@ class Ticket extends ResourceObject
     private $now;
 
     /**
-     * @Named("ticketItem=ticket_item_by_id, ticketInsert=ticket_insert")
+     * @Named("ticketInsert=ticket_insert")
      */
-    public function __construct(callable $ticketItem, callable $ticketInsert, NowInterface $now)
+    public function __construct(callable $ticketInsert, NowInterface $now)
     {
-        $this->ticketItem = $ticketItem;
         $this->ticketInsert = $ticketInsert;
         $this->now = $now;
     }
 
     /**
      * @JsonSchema(key="ticket", schema="ticket.json")
+     * @AliasQuery("ticket_item_by_id")
      */
     public function onGet(string $id) : ResourceObject
     {
-        $ticket = ($this->ticketItem)(['id' => $id]);
-        if (! $ticket) {
-            $this->code = StatusCode::NOT_FOUND;
-
-            return $this;
-        }
-        $this->body['ticket'] = $ticket;
-
-        return $this;
     }
 
     /**
