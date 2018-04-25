@@ -1,7 +1,6 @@
 <?php
 namespace Koriym\TicketSan\Form;
 
-use Aura\Html\Helper\Input;
 use Aura\Html\Helper\Tag;
 use Ray\WebFormModule\AbstractForm;
 
@@ -15,13 +14,11 @@ class TicketForm extends AbstractForm
         ]);
         /** @var Tag $tag */
         $tag = $this->helper->get('tag');
-        /** @var Input $input */
-        $input = $this->input;
         $form .= $tag('div', ['class' => 'form-group']);
         $form .= $tag('label', ['for' => 'title']);
         $form .= 'Title';
         $form .= $tag('/label') . PHP_EOL;
-        $form .= $input('title');
+        $form .= $this->input('title');
         $form .= $this->error('title');
         $form .= $tag('/div') . PHP_EOL;
 
@@ -30,7 +27,7 @@ class TicketForm extends AbstractForm
         $form .= 'Description';
         $form .= $tag('/label') . PHP_EOL;
 
-        $form .= $input('description');
+        $form .= $this->input('title');
         $form .= $this->error('description');
         $form .= $tag('/div') . PHP_EOL;
 
@@ -38,12 +35,12 @@ class TicketForm extends AbstractForm
         $form .= $tag('label', ['for' => 'title']);
         $form .= 'Assignee';
         $form .= $tag('/label') . PHP_EOL;
-        $form .= $input('assignee');
+        $form .= $this->input('title');
         $form .= $this->error('assignee');
         $form .= $tag('/div') . PHP_EOL;
 
         // submit
-        $form .= $input('submit');
+        $form .= $this->input('title');
         $form .= $tag('/form');
 
         return $form;
