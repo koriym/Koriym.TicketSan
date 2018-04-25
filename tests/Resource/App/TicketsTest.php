@@ -44,8 +44,8 @@ class TicketsTest extends TestCase
         $location = $ro->headers[ResponseHeader::LOCATION];
         $page = $this->resource->uri('app://self' . $location)();
         /* @var $page ResourceObject */
-        $this->assertSame('title1', $page->body['ticket']['title']);
-        $this->assertSame('description1', $page->body['ticket']['description']);
-        $this->assertSame('assignee1', $page->body['ticket']['assignee']);
+        $this->assertSame('title1', $page->body['title']);
+        $this->assertSame('description1', $page->body['description']);
+        $this->assertSame('assignee1', $page->body['assignee']);
     }
 }
