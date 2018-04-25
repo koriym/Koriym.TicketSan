@@ -2176,16 +2176,16 @@
         },
         {
             "name": "ray/aop",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.Aop.git",
-                "reference": "30851c1d63e8dd1cafb7c239b88ece2b66b07242"
+                "reference": "8b4efa57d837fb6ea5eba34150590901c7e78861"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.Aop/zipball/30851c1d63e8dd1cafb7c239b88ece2b66b07242",
-                "reference": "30851c1d63e8dd1cafb7c239b88ece2b66b07242",
+                "url": "https://api.github.com/repos/ray-di/Ray.Aop/zipball/8b4efa57d837fb6ea5eba34150590901c7e78861",
+                "reference": "8b4efa57d837fb6ea5eba34150590901c7e78861",
                 "shasum": ""
             },
             "require": {
@@ -2224,7 +2224,7 @@
             "keywords": [
                 "aop"
             ],
-            "time": "2018-03-02T20:51:01+00:00"
+            "time": "2018-04-25T01:59:28+00:00"
         },
         {
             "name": "ray/aura-session-module",
@@ -2402,12 +2402,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.QueryModule.git",
-                "reference": "992ab8069ef0bbf3707c780888b5d53c95438ce8"
+                "reference": "00bc2de7cbe2c36b896afffa045f24b6c38f3d1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.QueryModule/zipball/992ab8069ef0bbf3707c780888b5d53c95438ce8",
-                "reference": "992ab8069ef0bbf3707c780888b5d53c95438ce8",
+                "url": "https://api.github.com/repos/ray-di/Ray.QueryModule/zipball/00bc2de7cbe2c36b896afffa045f24b6c38f3d1e",
+                "reference": "00bc2de7cbe2c36b896afffa045f24b6c38f3d1e",
                 "shasum": ""
             },
             "require": {
@@ -2416,10 +2416,12 @@
                 "ray/di": "^2.6.6"
             },
             "require-dev": {
+                "bear/resource": "^1.9.2",
                 "friendsofphp/php-cs-fixer": "^2.11",
                 "phpmd/phpmd": "^2.6",
                 "phpstan/phpstan-shim": "^0.9",
                 "phpunit/phpunit": "^6.5",
+                "ray/aop": "^2.7",
                 "squizlabs/php_codesniffer": "^3.2"
             },
             "type": "library",
@@ -2447,7 +2449,7 @@
                 "Skeleton",
                 "psr"
             ],
-            "time": "2018-04-24T11:38:26+00:00"
+            "time": "2018-04-25T03:45:14+00:00"
         },
         {
             "name": "ray/web-form-module",
