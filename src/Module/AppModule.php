@@ -21,9 +21,9 @@ class AppModule extends AbstractModule
      */
     protected function configure()
     {
-        $appDir = dirname(dirname(__DIR__));
+        $appDir = dirname(__DIR__, 2);
         Dotenv::load([
-            'filepath' => dirname(dirname(__DIR__)) . '/.env',
+            'filepath' => $appDir . '/.env',
             'toEnv' => true
         ]);
         $this->install(new AuraRouterModule($appDir . '/var/conf/aura.route.php'));
