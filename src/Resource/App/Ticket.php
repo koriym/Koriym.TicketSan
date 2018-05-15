@@ -36,7 +36,7 @@ class Ticket extends ResourceObject
 
     /**
      * @JsonSchema(key="ticket", schema="ticket.json")
-     * @AliasQuery("ticket_item_by_id")
+     * @AliasQuery("ticket_item_by_id", type="item")
      */
     public function onGet(string $id) : ResourceObject
     {

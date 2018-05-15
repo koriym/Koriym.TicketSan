@@ -575,16 +575,16 @@
         },
         {
             "name": "bear/app-meta",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.AppMeta.git",
-                "reference": "0c6d9d5fe9234feb31b9bb265e622a7525d1510f"
+                "reference": "4f7847776bd659262a98bda81594fd1ccb0de7bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.AppMeta/zipball/0c6d9d5fe9234feb31b9bb265e622a7525d1510f",
-                "reference": "0c6d9d5fe9234feb31b9bb265e622a7525d1510f",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.AppMeta/zipball/4f7847776bd659262a98bda81594fd1ccb0de7bb",
+                "reference": "4f7847776bd659262a98bda81594fd1ccb0de7bb",
                 "shasum": ""
             },
             "require": {
@@ -609,7 +609,7 @@
             "keywords": [
                 "BEAR.Sunday"
             ],
-            "time": "2018-03-18T09:26:53+00:00"
+            "time": "2018-05-11T17:47:28+00:00"
         },
         {
             "name": "bear/aura-router-module",
@@ -659,26 +659,29 @@
         },
         {
             "name": "bear/package",
-            "version": "1.7.3",
+            "version": "1.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.Package.git",
-                "reference": "8c3465742c1370ee624716a91a607fcd8609439d"
+                "reference": "17a52cd85d4f4dc98b5085651ba875544373e0ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.Package/zipball/8c3465742c1370ee624716a91a607fcd8609439d",
-                "reference": "8c3465742c1370ee624716a91a607fcd8609439d",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.Package/zipball/17a52cd85d4f4dc98b5085651ba875544373e0ce",
+                "reference": "17a52cd85d4f4dc98b5085651ba875544373e0ce",
                 "shasum": ""
             },
             "require": {
                 "aura/cli": "^2.2",
-                "bear/app-meta": "^1.2",
-                "bear/query-repository": "^1.4",
-                "bear/streamer": "^1.0",
+                "bear/app-meta": "^1.4",
+                "bear/query-repository": "1.4.5",
+                "bear/streamer": "^1.0.1",
                 "bear/sunday": "^1.2.2",
                 "monolog/monolog": "^1.22",
-                "php": ">=7.0.0"
+                "php": ">=7.0.0",
+                "ray/aop": "^2.7.2",
+                "ray/compiler": "1.3.1",
+                "ray/di": "^2.7"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.2"
@@ -719,7 +722,7 @@
                 "framework",
                 "rest"
             ],
-            "time": "2018-03-30T05:58:04+00:00"
+            "time": "2018-05-15T02:10:57+00:00"
         },
         {
             "name": "bear/query-repository",
@@ -1585,16 +1588,16 @@
         },
         {
             "name": "madapaja/twig-module",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/madapaja/Madapaja.TwigModule.git",
-                "reference": "584b7b2b8f0322aa42cf1341159e0beb6058f019"
+                "reference": "8362a7731846f800f7d4630928c379143c3f3c50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/madapaja/Madapaja.TwigModule/zipball/584b7b2b8f0322aa42cf1341159e0beb6058f019",
-                "reference": "584b7b2b8f0322aa42cf1341159e0beb6058f019",
+                "url": "https://api.github.com/repos/madapaja/Madapaja.TwigModule/zipball/8362a7731846f800f7d4630928c379143c3f3c50",
+                "reference": "8362a7731846f800f7d4630928c379143c3f3c50",
                 "shasum": ""
             },
             "require": {
@@ -1631,7 +1634,7 @@
                 "BEAR.Sunday module",
                 "twig"
             ],
-            "time": "2018-01-19T06:27:32+00:00"
+            "time": "2018-05-11T13:38:32+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -1864,16 +1867,16 @@
         },
         {
             "name": "pagerfanta/pagerfanta",
-            "version": "v1.0.5",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/whiteoctober/Pagerfanta.git",
-                "reference": "29aade64addfdfb12c05aabf160f09d1aea6b143"
+                "reference": "8400ab498e500018cff9a099ac22555e7949aa9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/29aade64addfdfb12c05aabf160f09d1aea6b143",
-                "reference": "29aade64addfdfb12c05aabf160f09d1aea6b143",
+                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/8400ab498e500018cff9a099ac22555e7949aa9a",
+                "reference": "8400ab498e500018cff9a099ac22555e7949aa9a",
                 "shasum": ""
             },
             "require": {
@@ -1886,7 +1889,7 @@
                 "jmikola/geojson": "~1.0",
                 "mandango/mandango": "~1.0@dev",
                 "mandango/mondator": "~1.0@dev",
-                "phpunit/phpunit": "~4 | ~5",
+                "phpunit/phpunit": "^4.8.35 | ^5.7",
                 "propel/propel": "~2.0@dev",
                 "propel/propel1": "~1.6",
                 "ruflin/elastica": "~1.3",
@@ -1929,7 +1932,7 @@
                 "paginator",
                 "paging"
             ],
-            "time": "2017-03-20T13:46:15+00:00"
+            "time": "2018-05-01T10:49:10+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2176,25 +2179,25 @@
         },
         {
             "name": "ray/aop",
-            "version": "2.7.0",
+            "version": "2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.Aop.git",
-                "reference": "8b4efa57d837fb6ea5eba34150590901c7e78861"
+                "reference": "b6e3bbd823ce5a79be238784dd3292aad73bab92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.Aop/zipball/8b4efa57d837fb6ea5eba34150590901c7e78861",
-                "reference": "8b4efa57d837fb6ea5eba34150590901c7e78861",
+                "url": "https://api.github.com/repos/ray-di/Ray.Aop/zipball/b6e3bbd823ce5a79be238784dd3292aad73bab92",
+                "reference": "b6e3bbd823ce5a79be238784dd3292aad73bab92",
                 "shasum": ""
             },
             "require": {
-                "doctrine/annotations": "^1.2",
-                "nikic/php-parser": "^3.0",
-                "php": "^7.0"
+                "doctrine/annotations": "^1.4",
+                "nikic/php-parser": "^3.1.5",
+                "php": ">=7.0.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.2"
+                "phpunit/phpunit": "^6.5"
             },
             "suggest": {
                 "ray/di": "A dependency injection framework"
@@ -2224,7 +2227,7 @@
             "keywords": [
                 "aop"
             ],
-            "time": "2018-04-25T01:59:28+00:00"
+            "time": "2018-05-08T15:15:46+00:00"
         },
         {
             "name": "ray/aura-session-module",
@@ -2311,27 +2314,32 @@
         },
         {
             "name": "ray/compiler",
-            "version": "1.1.7",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.Compiler.git",
-                "reference": "d64264d93e4e42aedc7efd7c216af1bd86ea8700"
+                "reference": "0edc78325c47ee9c2cfde8764d2dfe022b4c0b49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.Compiler/zipball/d64264d93e4e42aedc7efd7c216af1bd86ea8700",
-                "reference": "d64264d93e4e42aedc7efd7c216af1bd86ea8700",
+                "url": "https://api.github.com/repos/ray-di/Ray.Compiler/zipball/0edc78325c47ee9c2cfde8764d2dfe022b4c0b49",
+                "reference": "0edc78325c47ee9c2cfde8764d2dfe022b4c0b49",
                 "shasum": ""
             },
             "require": {
                 "koriym/printo": "^1.0",
-                "php": ">=7.1.0"
+                "php": ">=7.0.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0",
-                "ray/di": "^2.6.5"
+                "phpunit/phpunit": "^6.5",
+                "ray/di": "^2.6.7"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Ray\\Compiler\\": "src/"
@@ -2347,26 +2355,26 @@
                 "code-gen",
                 "compiler"
             ],
-            "time": "2018-03-06T10:51:45+00:00"
+            "time": "2018-05-11T08:49:49+00:00"
         },
         {
             "name": "ray/di",
-            "version": "2.6.6",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.Di.git",
-                "reference": "804da3e41433b9ab7221d75be9efcdc0c9566e79"
+                "reference": "ed97710aef916e6d88f45ed643bf94f704ed63c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.Di/zipball/804da3e41433b9ab7221d75be9efcdc0c9566e79",
-                "reference": "804da3e41433b9ab7221d75be9efcdc0c9566e79",
+                "url": "https://api.github.com/repos/ray-di/Ray.Di/zipball/ed97710aef916e6d88f45ed643bf94f704ed63c9",
+                "reference": "ed97710aef916e6d88f45ed643bf94f704ed63c9",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "ray/aop": "^2.6",
-                "ray/compiler": "^1.1.5"
+                "ray/aop": "^2.7.1",
+                "ray/compiler": "^1.3.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.3.0"
@@ -2394,7 +2402,7 @@
                 "di",
                 "guice"
             ],
-            "time": "2018-04-21T13:53:36+00:00"
+            "time": "2018-05-08T08:17:18+00:00"
         },
         {
             "name": "ray/query-module",
@@ -2402,12 +2410,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.QueryModule.git",
-                "reference": "00bc2de7cbe2c36b896afffa045f24b6c38f3d1e"
+                "reference": "ab965464220ad514c7ef7ea4e51186c70d13934a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.QueryModule/zipball/00bc2de7cbe2c36b896afffa045f24b6c38f3d1e",
-                "reference": "00bc2de7cbe2c36b896afffa045f24b6c38f3d1e",
+                "url": "https://api.github.com/repos/ray-di/Ray.QueryModule/zipball/ab965464220ad514c7ef7ea4e51186c70d13934a",
+                "reference": "ab965464220ad514c7ef7ea4e51186c70d13934a",
                 "shasum": ""
             },
             "require": {
@@ -2449,7 +2457,7 @@
                 "Skeleton",
                 "psr"
             ],
-            "time": "2018-04-25T03:45:14+00:00"
+            "time": "2018-05-15T18:35:56+00:00"
         },
         {
             "name": "ray/web-form-module",
@@ -2572,17 +2580,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "9deddd9fc64853356d688a1514318abb2d9f3d4b"
+                "reference": "6fe712594835e5b70de30aec5fc244a7bd8464cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/9deddd9fc64853356d688a1514318abb2d9f3d4b",
-                "reference": "9deddd9fc64853356d688a1514318abb2d9f3d4b",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/6fe712594835e5b70de30aec5fc244a7bd8464cd",
+                "reference": "6fe712594835e5b70de30aec5fc244a7bd8464cd",
                 "shasum": ""
             },
             "conflict": {
                 "3f/pygmentize": "<1.2",
-                "adodb/adodb-php": "<5.20.6",
+                "adodb/adodb-php": "<5.20.12",
                 "amphp/artax": "<1.0.6|>=2,<2.0.6",
                 "amphp/http": "<1.0.1",
                 "asymmetricrypt/asymmetricrypt": ">=0,<9.9.99",
@@ -2608,13 +2616,14 @@
                 "doctrine/mongodb-odm-bundle": ">=2,<3.0.1",
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
-                "drupal/core": ">=7,<7.58|>=8,<8.4.6|>=8.5,<8.5.1",
-                "drupal/drupal": ">=7,<7.58|>=8,<8.4.6|>=8.5,<8.5.1",
+                "drupal/core": ">=7,<7.59|>=8,<8.4.8|>=8.5,<8.5.3",
+                "drupal/drupal": ">=7,<7.59|>=8,<8.4.8|>=8.5,<8.5.3",
                 "erusev/parsedown": "<1.7",
                 "ezsystems/ezpublish-legacy": ">=5.3,<5.3.12.3|>=5.4,<5.4.11.3|>=2017.8,<2017.8.1.1|>=2017.12,<2017.12.2.1",
                 "firebase/php-jwt": "<2",
                 "friendsofsymfony/rest-bundle": ">=1.2,<1.2.2",
                 "friendsofsymfony/user-bundle": ">=1.2,<1.3.5",
+                "fuel/core": "<1.8.1",
                 "gree/jose": "<=2.2",
                 "gregwar/rst": "<1.0.3",
                 "guzzlehttp/guzzle": ">=6,<6.2.1|>=4.0.0-rc2,<4.2.4|>=5,<5.3.1",
@@ -2727,20 +2736,20 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-04-22T05:30:14+00:00"
+            "time": "2018-05-11T06:55:15+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.7.0",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b"
+                "reference": "3296adf6a6454a050679cde90f95350ad604b171"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/78be803ce01e55d3491c1397cf1c64beb9c1b63b",
-                "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/3296adf6a6454a050679cde90f95350ad604b171",
+                "reference": "3296adf6a6454a050679cde90f95350ad604b171",
                 "shasum": ""
             },
             "require": {
@@ -2752,7 +2761,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "1.8-dev"
                 }
             },
             "autoload": {
@@ -2786,7 +2795,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-01-30T19:27:44+00:00"
+            "time": "2018-04-26T10:06:28+00:00"
         },
         {
             "name": "twig/twig",
@@ -4903,7 +4912,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -4965,16 +4974,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "aad9a6fe47319f22748fd764f52d3a7ca6fa6b64"
+                "reference": "3e820bc2c520a87ca209ad8fa961c97f42e0b4ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/aad9a6fe47319f22748fd764f52d3a7ca6fa6b64",
-                "reference": "aad9a6fe47319f22748fd764f52d3a7ca6fa6b64",
+                "url": "https://api.github.com/repos/symfony/console/zipball/3e820bc2c520a87ca209ad8fa961c97f42e0b4ae",
+                "reference": "3e820bc2c520a87ca209ad8fa961c97f42e0b4ae",
                 "shasum": ""
             },
             "require": {
@@ -4994,7 +5003,7 @@
                 "symfony/process": "~3.4|~4.0"
             },
             "suggest": {
-                "psr/log": "For using the console logger",
+                "psr/log-implementation": "For using the console logger",
                 "symfony/event-dispatcher": "",
                 "symfony/lock": "",
                 "symfony/process": ""
@@ -5029,20 +5038,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-03T05:24:00+00:00"
+            "time": "2018-04-30T01:23:47+00:00"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "9f1cea656afc5512c6f5e58d61fcea12acee113e"
+                "reference": "1f99622d8a63b160bfdd0ad7b2da56ee413cba64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/9f1cea656afc5512c6f5e58d61fcea12acee113e",
-                "reference": "9f1cea656afc5512c6f5e58d61fcea12acee113e",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/1f99622d8a63b160bfdd0ad7b2da56ee413cba64",
+                "reference": "1f99622d8a63b160bfdd0ad7b2da56ee413cba64",
                 "shasum": ""
             },
             "require": {
@@ -5100,11 +5109,11 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-02T09:52:41+00:00"
+            "time": "2018-04-30T01:05:59+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -5167,7 +5176,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -5216,7 +5225,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -5265,7 +5274,7 @@
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
@@ -5319,16 +5328,16 @@
         },
         {
             "name": "symfony/polyfill-php70",
-            "version": "v1.7.0",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php70.git",
-                "reference": "3532bfcd8f933a7816f3a0a59682fc404776600f"
+                "reference": "77454693d8f10dd23bb24955cffd2d82db1007a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/3532bfcd8f933a7816f3a0a59682fc404776600f",
-                "reference": "3532bfcd8f933a7816f3a0a59682fc404776600f",
+                "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/77454693d8f10dd23bb24955cffd2d82db1007a6",
+                "reference": "77454693d8f10dd23bb24955cffd2d82db1007a6",
                 "shasum": ""
             },
             "require": {
@@ -5338,7 +5347,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "1.8-dev"
                 }
             },
             "autoload": {
@@ -5374,20 +5383,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-01-30T19:27:44+00:00"
+            "time": "2018-04-26T10:06:28+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.7.0",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
-                "reference": "8eca20c8a369e069d4f4c2ac9895144112867422"
+                "reference": "a4576e282d782ad82397f3e4ec1df8e0f0cafb46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/8eca20c8a369e069d4f4c2ac9895144112867422",
-                "reference": "8eca20c8a369e069d4f4c2ac9895144112867422",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/a4576e282d782ad82397f3e4ec1df8e0f0cafb46",
+                "reference": "a4576e282d782ad82397f3e4ec1df8e0f0cafb46",
                 "shasum": ""
             },
             "require": {
@@ -5396,7 +5405,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "1.8-dev"
                 }
             },
             "autoload": {
@@ -5429,11 +5438,11 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-01-31T17:43:24+00:00"
+            "time": "2018-04-26T10:06:28+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -5482,7 +5491,7 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
