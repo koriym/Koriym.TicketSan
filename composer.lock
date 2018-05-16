@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ace41ebfa62b90cf1ac581d6cee27cd8",
+    "content-hash": "d904280b213481cc8dcf0c7087ef68e4",
     "packages": [
         {
             "name": "aura/cli",
@@ -2406,16 +2406,16 @@
         },
         {
             "name": "ray/query-module",
-            "version": "1.x-dev",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.QueryModule.git",
-                "reference": "285296fb5cef3e11c42daf9f76ba36615cbb3967"
+                "reference": "3694fa0edace3603adf64ac14212785de4de0377"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.QueryModule/zipball/285296fb5cef3e11c42daf9f76ba36615cbb3967",
-                "reference": "285296fb5cef3e11c42daf9f76ba36615cbb3967",
+                "url": "https://api.github.com/repos/ray-di/Ray.QueryModule/zipball/3694fa0edace3603adf64ac14212785de4de0377",
+                "reference": "3694fa0edace3603adf64ac14212785de4de0377",
                 "shasum": ""
             },
             "require": {
@@ -2457,7 +2457,7 @@
                 "Skeleton",
                 "psr"
             ],
-            "time": "2018-05-16T07:19:23+00:00"
+            "time": "2018-05-16T15:48:53+00:00"
         },
         {
             "name": "ray/web-form-module",
@@ -5622,8 +5622,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roave/security-advisories": 20,
-        "ray/query-module": 20
+        "roave/security-advisories": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
