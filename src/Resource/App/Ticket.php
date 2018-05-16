@@ -26,7 +26,7 @@ class Ticket extends ResourceObject
     private $now;
 
     /**
-     * @Named("ticketInsert=ticket_insert")
+     * @Named("createTicket=ticket_insert")
      */
     public function __construct( callable $createTicket, NowInterface $now)
     {
