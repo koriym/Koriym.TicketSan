@@ -18,7 +18,7 @@ class Ticket extends ResourceObject
     /**
      * @var callable
      */
-    private $ticketInsert;
+    private $createTicket;
 
     /**
      * @var NowInterface
@@ -28,9 +28,9 @@ class Ticket extends ResourceObject
     /**
      * @Named("ticketInsert=ticket_insert")
      */
-    public function __construct(callable $ticketInsert, NowInterface $now)
+    public function __construct( callable $createTicket, NowInterface $now)
     {
-        $this->ticketInsert = $ticketInsert;
+        $this->createTicket = $createTicket;
         $this->now = $now;
     }
 
@@ -50,7 +50,7 @@ class Ticket extends ResourceObject
         string $description = '',
         string $assignee = ''
     ) : ResourceObject {
-        ($this->ticketInsert)([
+        ($this->createTicket)([
             'title' => $title,
             'description' => $description,
             'assignee' => $assignee,
