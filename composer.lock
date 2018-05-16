@@ -659,22 +659,22 @@
         },
         {
             "name": "bear/package",
-            "version": "1.7.9",
+            "version": "1.7.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.Package.git",
-                "reference": "17a52cd85d4f4dc98b5085651ba875544373e0ce"
+                "reference": "c34602b03c91d03187cbd1036d7ca5af3f2fb629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.Package/zipball/17a52cd85d4f4dc98b5085651ba875544373e0ce",
-                "reference": "17a52cd85d4f4dc98b5085651ba875544373e0ce",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.Package/zipball/c34602b03c91d03187cbd1036d7ca5af3f2fb629",
+                "reference": "c34602b03c91d03187cbd1036d7ca5af3f2fb629",
                 "shasum": ""
             },
             "require": {
                 "aura/cli": "^2.2",
                 "bear/app-meta": "^1.4",
-                "bear/query-repository": "1.4.5",
+                "bear/query-repository": "^1.4.5",
                 "bear/streamer": "^1.0.1",
                 "bear/sunday": "^1.2.2",
                 "monolog/monolog": "^1.22",
@@ -722,20 +722,20 @@
                 "framework",
                 "rest"
             ],
-            "time": "2018-05-15T02:10:57+00:00"
+            "time": "2018-05-16T05:08:32+00:00"
         },
         {
             "name": "bear/query-repository",
-            "version": "1.4.5",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.QueryRepository.git",
-                "reference": "65b935bed5f90573944e7aaaccc0470b125d7fb0"
+                "reference": "613a5e9acf9a1d1a4e1da371a93a8ae1cd6dd7ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.QueryRepository/zipball/65b935bed5f90573944e7aaaccc0470b125d7fb0",
-                "reference": "65b935bed5f90573944e7aaaccc0470b125d7fb0",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.QueryRepository/zipball/613a5e9acf9a1d1a4e1da371a93a8ae1cd6dd7ff",
+                "reference": "613a5e9acf9a1d1a4e1da371a93a8ae1cd6dd7ff",
                 "shasum": ""
             },
             "require": {
@@ -765,7 +765,7 @@
                 }
             ],
             "description": "Resource query responsibility segregation",
-            "time": "2018-03-27T08:25:59+00:00"
+            "time": "2018-05-15T03:52:03+00:00"
         },
         {
             "name": "bear/resource",
@@ -2410,12 +2410,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.QueryModule.git",
-                "reference": "ab965464220ad514c7ef7ea4e51186c70d13934a"
+                "reference": "285296fb5cef3e11c42daf9f76ba36615cbb3967"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.QueryModule/zipball/ab965464220ad514c7ef7ea4e51186c70d13934a",
-                "reference": "ab965464220ad514c7ef7ea4e51186c70d13934a",
+                "url": "https://api.github.com/repos/ray-di/Ray.QueryModule/zipball/285296fb5cef3e11c42daf9f76ba36615cbb3967",
+                "reference": "285296fb5cef3e11c42daf9f76ba36615cbb3967",
                 "shasum": ""
             },
             "require": {
@@ -2457,7 +2457,7 @@
                 "Skeleton",
                 "psr"
             ],
-            "time": "2018-05-15T18:35:56+00:00"
+            "time": "2018-05-16T07:19:23+00:00"
         },
         {
             "name": "ray/web-form-module",
