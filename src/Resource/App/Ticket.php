@@ -7,6 +7,7 @@ use BEAR\Resource\ResourceObject;
 use Koriym\HttpConstants\ResponseHeader;
 use Koriym\HttpConstants\StatusCode;
 use Koriym\Now\NowInterface;
+use Ray\AuraSqlModule\Annotation\Transactional;
 use Ray\AuraSqlModule\AuraSqlInject;
 use Ray\Di\Di\Named;
 use Ray\Query\Annotation\AliasQuery;
@@ -44,6 +45,7 @@ class Ticket extends ResourceObject
 
     /**
      * @ReturnCreatedResource
+     * @Transactional
      */
     public function onPost(
         string $title,
