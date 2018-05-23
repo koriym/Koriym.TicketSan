@@ -16,13 +16,13 @@ php bootstrap/api.php post 'app://self/ticket?title=title1'
 
 ```
 201 Created
-Location: /tickets/16
+Location: /tickets/6bdb967b-616f-4c54-a65c-66599ba8be0e
 content-type: application/hal+json
 ```
 
 Get created ticket
 ```
-php bootstrap/api.php get 'app://self/tickets/16'
+php bootstrap/api.php get 'app://self/tickets/6bdb967b-616f-4c54-a65c-66599ba8be0e'
 ```
 
 ```
@@ -31,19 +31,18 @@ ETag: 1055411361
 Last-Modified: Sun, 18 Feb 2018 01:41:55 GMT
 content-type: application/hal+json
 
+
 {
-    "ticket": {
-        "id": "16",
-        "title": "title1",
-        "description": "",
-        "status": "",
-        "assignee": "",
-        "created": "2018-02-18 02:39:44",
-        "updated": "2018-02-18 02:39:44"
-    },
+    "id": "6bdb967b-616f-4c54-a65c-66599ba8be0e",
+    "title": "title1",
+    "description": "",
+    "status": "",
+    "assignee": "",
+    "created": "2018-05-23 13:53:42",
+    "updated": "2018-05-23 13:53:42",
     "_links": {
         "self": {
-            "href": "/tickets/16"
+            "href": "/tickets/6bdb967b-616f-4c54-a65c-66599ba8be0e"
         }
     }
 }

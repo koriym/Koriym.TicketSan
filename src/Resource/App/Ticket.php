@@ -2,6 +2,7 @@
 namespace Koriym\TicketSan\Resource\App;
 
 use BEAR\Package\Annotation\ReturnCreatedResource;
+use BEAR\RepositoryModule\Annotation\Cacheable;
 use BEAR\Resource\Annotation\JsonSchema;
 use BEAR\Resource\ResourceObject;
 use Koriym\HttpConstants\ResponseHeader;
@@ -13,6 +14,9 @@ use Ray\AuraSqlModule\AuraSqlInject;
 use Ray\Di\Di\Named;
 use Ray\Query\Annotation\AliasQuery;
 
+/**
+ * @Cacheable
+ */
 class Ticket extends ResourceObject
 {
     /**
