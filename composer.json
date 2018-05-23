@@ -16,7 +16,8 @@
         "koriym/http-constants": "^1.0",
         "bear/aura-router-module": "^2.0",
         "bear/api-doc": "^0.1.1",
-        "ray/query-module": "^0.1"
+        "ray/query-module": "^0.1",
+        "ramsey/uuid": "^3.7"
     },
     "require-dev": {
         "bear/qatools": "^1.4.9",

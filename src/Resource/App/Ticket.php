@@ -7,6 +7,7 @@ use BEAR\Resource\ResourceObject;
 use Koriym\HttpConstants\ResponseHeader;
 use Koriym\HttpConstants\StatusCode;
 use Koriym\Now\NowInterface;
+use Ramsey\Uuid\Uuid;
 use Ray\AuraSqlModule\Annotation\Transactional;
 use Ray\AuraSqlModule\AuraSqlInject;
 use Ray\Di\Di\Named;
@@ -14,8 +15,6 @@ use Ray\Query\Annotation\AliasQuery;
 
 class Ticket extends ResourceObject
 {
-    use AuraSqlInject;
-
     /**
      * @var callable
      */
@@ -52,7 +51,9 @@ class Ticket extends ResourceObject
         string $description = '',
         string $assignee = ''
     ) : ResourceObject {
+        $id = Uuid::uuid4()->toString();
         ($this->createTicket)([
+            'id' => $id,
             'title' => $title,
             'description' => $description,
             'assignee' => $assignee,
@@ -60,7 +61,6 @@ class Ticket extends ResourceObject
             'created' => (string) $this->now,
             'updated' => (string) $this->now,
         ]);
-        $id = $this->pdo->lastInsertId();
         $this->code = StatusCode::CREATED;
         $this->headers[ResponseHeader::LOCATION] = "/ticket?id={$id}";
 

@@ -1,1 +1,1 @@
-INSERT INTO ticket (title, description, status, assignee, created, updated) VALUES (:title, :description, :status, :assignee, :created, :updated)
+INSERT INTO ticket (id, title, description, status, assignee, created, updated) VALUES (:id, :title, :description, :status, :assignee, :created, :updated)
