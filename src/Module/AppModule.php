@@ -29,7 +29,6 @@ class AppModule extends AbstractModule
         $this->install(new AuraRouterModule($appDir . '/var/conf/aura.route.php'));
         $this->install(new PackageModule);
         $this->install(new NowModule);
-        $this->install(new QueryLocatorModule($appDir . '/var/sql'));
         $this->install(new JsonSchemalModule($appDir . '/var/json_schema', $appDir . '/var/json_validate'));
         // Database
         $dbConfig = 'sqlite:' . $appDir . '/var/db/ticket.sqlite3';

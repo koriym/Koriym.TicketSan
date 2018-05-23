@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0dc6c130bcae084a46acb43feeb06a78",
+    "content-hash": "e90b1553bd0b904e3e46e7a0112b0cd7",
     "packages": [
         {
             "name": "aura/cli",
@@ -1491,39 +1491,6 @@
                 "psr4"
             ],
             "time": "2014-12-07T13:10:31+00:00"
-        },
-        {
-            "name": "koriym/query-locator",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/koriym/Koriym.QueryLocator.git",
-                "reference": "9a935305b1e4bdb179acc20fc4d9b15523be8e27"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/koriym/Koriym.QueryLocator/zipball/9a935305b1e4bdb179acc20fc4d9b15523be8e27",
-                "reference": "9a935305b1e4bdb179acc20fc4d9b15523be8e27",
-                "shasum": ""
-            },
-            "require-dev": {
-                "ray/di": "~2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Koriym\\QueryLocator\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A SQL query locator",
-            "keywords": [
-                "sql"
-            ],
-            "time": "2016-01-29T06:04:33+00:00"
         },
         {
             "name": "m1/env",
