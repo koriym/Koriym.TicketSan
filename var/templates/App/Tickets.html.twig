@@ -1,13 +1,9 @@
-<a href="/create">Create Ticket</a>
-
-<h2>List</h2>
 {% if _ro.body %}
     <table class="table">
         <tbody>
         {% for row in _ro.body %}
             <tr>
-                <td><a href="/tickets/{{ row.id }}">{{ row.id }}</a></td>
-                <td>{{ row.title }}</td>
+                <td><a href="/tickets/{{ row.id }}">{{ row.title }}</a></td>
                 <td>{{ row.description }}</td>
                 <td>{{ row.created|date("Y/m/d H:i:s") }}</td>
             </tr>
