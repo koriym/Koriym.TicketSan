@@ -5,6 +5,7 @@ use BEAR\Resource\Annotation\Link;
 use BEAR\Resource\ResourceObject;
 use BEAR\Sunday\Inject\ResourceInject;
 use Koriym\TicketSan\Form\TicketForm;
+use Ray\WebFormModule\Annotation\FormValidation;
 
 class Create extends ResourceObject
 {
@@ -13,7 +14,7 @@ class Create extends ResourceObject
     /**
      * @var TicketForm
      */
-    private $form;
+    protected $form;
 
     public function __construct(TicketForm $form)
     {
@@ -30,6 +31,7 @@ class Create extends ResourceObject
     }
 
     /**
+     * @FormValidation(onFailure="onFailed")
      * @Link(rel="create", method="post", href="app://self/ticket"))
      */
     public function onPost(
@@ -44,5 +46,13 @@ class Create extends ResourceObject
         ];
 
         return $this;
+    }
+
+    public function onFailed(
+        string $title,
+        string $description,
+        string $assignee
+    ) {
+        return $this->onGet();
     }
 }
