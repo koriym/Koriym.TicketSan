@@ -56,7 +56,7 @@ php bootstrap/api.php get 'app://self/tickets'
 ## Web-API
 
 ```
-COMPOSER_PROCESS_TIMEOUT=0 composer serve-api
+composer run serve-api --timeout=0
 ```
 
 Serve API document for human
@@ -120,7 +120,9 @@ content-type: application/hal+json
 
 ## HTML App
 
-    COMPOSER_PROCESS_TIMEOUT=0 composer serve
+```
+composer run serve --timeout=0
+```
 
 Request [http://localhost:8080/](http://localhost:8080/)
 
