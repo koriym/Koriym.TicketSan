@@ -9,7 +9,7 @@ class Ticket extends ResourceObject
     /**
      * @Embed(rel="ticket", src="app://self/ticket{?id}")
      */
-    public function onGet(int $id) : ResourceObject
+    public function onGet(string $id) : ResourceObject
     {
         unset($id);
 
