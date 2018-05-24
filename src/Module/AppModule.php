@@ -26,18 +26,18 @@ class AppModule extends AbstractModule
             'filepath' => $appDir . '/.env',
             'toEnv' => true
         ]);
+        // router
         $this->install(new AuraRouterModule($appDir . '/var/conf/aura.route.php'));
-        $this->install(new PackageModule);
-        $this->install(new NowModule);
-        $this->install(new JsonSchemalModule($appDir . '/var/json_schema', $appDir . '/var/json_validate'));
-        // Database
+        // database
         $dbConfig = 'sqlite:' . $appDir . '/var/db/ticket.sqlite3';
         $this->install(new AuraSqlModule($dbConfig));
-        // Form
-        $this->install(new AuraInputModule);
-        $this->bind(TicketForm::class);
-        $this->bind(FormInterface::class)->annotatedWith('ticket_form')->to(TicketForm::class);
         $this->install(new SqlQueryModule($appDir . '/var/sql'));
+        // time
+        $this->install(new NowModule);
+        // validation
+        $this->install(new JsonSchemalModule($appDir . '/var/json_schema', $appDir . '/var/json_validate'));
+        // form
+        $this->install(new AuraInputModule);
         $this->install(new PackageModule);
     }
 }
