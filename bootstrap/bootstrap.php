@@ -11,7 +11,7 @@ $request = $app->router->match($GLOBALS, $_SERVER);
 
 try {
     $page = $app->resource->{$request->method}->uri($request->path)($request->query);
-    /* @var $page ResourceObject */
+    /** @var ResourceObject $page  */
     $page->transfer($app->responder, $_SERVER);
     exit(0);
 } catch (\Exception $e) {
