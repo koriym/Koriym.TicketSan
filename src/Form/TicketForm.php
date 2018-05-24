@@ -6,6 +6,10 @@ use Ray\WebFormModule\AbstractForm;
 
 class TicketForm extends AbstractForm
 {
+    /**
+     * @throws \Aura\Html\Exception\HelperNotFound
+     * @throws \Aura\Input\Exception\NoSuchInput
+     */
     public function __toString()
     {
         $form = $this->form([
@@ -14,33 +18,10 @@ class TicketForm extends AbstractForm
         ]);
         /** @var Tag $tag */
         $tag = $this->helper->get('tag');
-        $form .= $tag('div', ['class' => 'form-group']);
-        $form .= $tag('label', ['for' => 'title']);
-        $form .= 'Title';
-        $form .= $tag('/label') . PHP_EOL;
-        $form .= $this->input('title');
-        $form .= $this->error('title');
-        $form .= $tag('/div') . PHP_EOL;
-
-        $form .= $tag('div', ['class' => 'form-group']);
-        $form .= $tag('label', ['for' => 'title']);
-        $form .= 'Description';
-        $form .= $tag('/label') . PHP_EOL;
-
-        $form .= $this->input('title');
-        $form .= $this->error('description');
-        $form .= $tag('/div') . PHP_EOL;
-
-        $form .= $tag('div', ['class' => 'form-group']);
-        $form .= $tag('label', ['for' => 'title']);
-        $form .= 'Assignee';
-        $form .= $tag('/label') . PHP_EOL;
-        $form .= $this->input('title');
-        $form .= $this->error('assignee');
-        $form .= $tag('/div') . PHP_EOL;
-
-        // submit
-        $form .= $this->input('title');
+        $form .= $this->setTitle($tag);
+        $form .= $this->setDescription($tag);
+        $form .= $this->setAssignee($tag);
+        $form .= $this->input('submit');
         $form .= $tag('/form');
 
         return $form;
@@ -81,5 +62,53 @@ class TicketForm extends AbstractForm
         // form validation
         $this->filter->validate('title')->is('strlenMin', 3);
         $this->filter->useFieldMessage('title', 'Min 3 Characters required');
+    }
+
+    /**
+     * @throws \Aura\Input\Exception\NoSuchInput
+     */
+    private function setTitle(Tag $tag) : string
+    {
+        $form = $tag('div', ['class' => 'form-group']);
+        $form .= $tag('label', ['for' => 'title']);
+        $form .= 'Title';
+        $form .= $tag('/label') . PHP_EOL;
+        $form .= $this->input('title');
+        $form .= $this->error('title');
+        $form .= $tag('/div') . PHP_EOL;
+
+        return $form;
+    }
+
+    /**
+     * @throws \Aura\Input\Exception\NoSuchInput
+     */
+    private function setDescription(Tag $tag) : string
+    {
+        $form = $tag('div', ['class' => 'form-group']);
+        $form .= $tag('label', ['for' => 'description']);
+        $form .= 'Description';
+        $form .= $tag('/label') . PHP_EOL;
+        $form .= $this->input('description');
+        $form .= $this->error('description');
+        $form .= $tag('/div') . PHP_EOL;
+
+        return $form;
+    }
+
+    /**
+     * @throws \Aura\Input\Exception\NoSuchInput
+     */
+    private function setAssignee(Tag $tag) : string
+    {
+        $form = $tag('div', ['class' => 'form-group']);
+        $form .= $tag('label', ['for' => 'assignee']);
+        $form .= 'Assignee';
+        $form .= $tag('/label') . PHP_EOL;
+        $form .= $this->input('assignee');
+        $form .= $this->error('assignee');
+        $form .= $tag('/div') . PHP_EOL;
+
+        return $form;
     }
 }
