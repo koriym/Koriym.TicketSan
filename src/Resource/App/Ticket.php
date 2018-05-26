@@ -3,6 +3,8 @@ namespace Koriym\TicketSan\Resource\App;
 
 use BEAR\Package\Annotation\ReturnCreatedResource;
 use BEAR\RepositoryModule\Annotation\Cacheable;
+use BEAR\RepositoryModule\Annotation\Purge;
+use BEAR\RepositoryModule\Annotation\Refresh;
 use BEAR\Resource\Annotation\JsonSchema;
 use BEAR\Resource\ResourceObject;
 use Koriym\HttpConstants\ResponseHeader;
@@ -49,6 +51,8 @@ class Ticket extends ResourceObject
     /**
      * @ReturnCreatedResource
      * @Transactional
+     * @Purge(uri="app://self/tickets")
+     * @Purge(uri="page://self/tickets")
      */
     public function onPost(
         string $title,
