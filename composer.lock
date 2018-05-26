@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e90b1553bd0b904e3e46e7a0112b0cd7",
+    "content-hash": "1cf79386fb33a7c14b18102b3abec81f",
     "packages": [
         {
             "name": "aura/cli",
@@ -724,20 +724,20 @@
         },
         {
             "name": "bear/query-repository",
-            "version": "1.5.3",
+            "version": "1.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.QueryRepository.git",
-                "reference": "6aacf6dbf15468627c2877a3f0cc179a38520322"
+                "reference": "1ad4d6a5467fbd2f3bf2f63d469d2ff0a6cf7066"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.QueryRepository/zipball/6aacf6dbf15468627c2877a3f0cc179a38520322",
-                "reference": "6aacf6dbf15468627c2877a3f0cc179a38520322",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.QueryRepository/zipball/1ad4d6a5467fbd2f3bf2f63d469d2ff0a6cf7066",
+                "reference": "1ad4d6a5467fbd2f3bf2f63d469d2ff0a6cf7066",
                 "shasum": ""
             },
             "require": {
-                "bear/resource": "^1.9.2",
+                "bear/resource": "^1.9.5",
                 "doctrine/cache": "^1.6.1",
                 "mobiledetect/mobiledetectlib": "^2.5.0",
                 "php": ">=7.0.0"
@@ -763,7 +763,7 @@
                 }
             ],
             "description": "Resource query responsibility segregation",
-            "time": "2018-05-25T12:40:17+00:00"
+            "time": "2018-05-26T17:07:00+00:00"
         },
         {
             "name": "bear/resource",
