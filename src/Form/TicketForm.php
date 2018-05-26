@@ -7,27 +7,6 @@ use Ray\WebFormModule\AbstractForm;
 class TicketForm extends AbstractForm
 {
     /**
-     * @throws \Aura\Html\Exception\HelperNotFound
-     * @throws \Aura\Input\Exception\NoSuchInput
-     */
-    public function __toString()
-    {
-        $form = $this->form([
-            'method' => 'post',
-            'action' => '/create',
-        ]);
-        /** @var Tag $tag */
-        $tag = $this->helper->get('tag');
-        $form .= $this->setTitle($tag);
-        $form .= $this->setDescription($tag);
-        $form .= $this->setAssignee($tag);
-        $form .= $this->input('submit');
-        $form .= $tag('/form');
-
-        return $form;
-    }
-
-    /**
      * {@inheritdoc}
      */
     public function init()
@@ -62,6 +41,27 @@ class TicketForm extends AbstractForm
         // form validation
         $this->filter->validate('title')->is('strlenMin', 3);
         $this->filter->useFieldMessage('title', 'Min 3 Characters required');
+    }
+
+    /**
+     * @throws \Aura\Html\Exception\HelperNotFound
+     * @throws \Aura\Input\Exception\NoSuchInput
+     */
+    public function __toString()
+    {
+        $form = $this->form([
+            'method' => 'post',
+            'action' => '/create',
+        ]);
+        /** @var Tag $tag */
+        $tag = $this->helper->get('tag');
+        $form .= $this->setTitle($tag);
+        $form .= $this->setDescription($tag);
+        $form .= $this->setAssignee($tag);
+        $form .= $this->input('submit');
+        $form .= $tag('/form');
+
+        return $form;
     }
 
     /**
