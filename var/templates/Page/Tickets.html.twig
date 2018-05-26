@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1 class="page-header">Tickets</h1>
-
+    <p>Last Update: {{ last_update }}</p>
     <p><a href="/create">Create Ticket</a></p>
     {{ tickets|raw }}
 {% endblock %}
