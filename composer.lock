@@ -724,16 +724,16 @@
         },
         {
             "name": "bear/query-repository",
-            "version": "1.5.1",
+            "version": "1.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.QueryRepository.git",
-                "reference": "0f31f13f3a0e7f80f35ab64496917c7ecf9b218c"
+                "reference": "6aacf6dbf15468627c2877a3f0cc179a38520322"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.QueryRepository/zipball/0f31f13f3a0e7f80f35ab64496917c7ecf9b218c",
-                "reference": "0f31f13f3a0e7f80f35ab64496917c7ecf9b218c",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.QueryRepository/zipball/6aacf6dbf15468627c2877a3f0cc179a38520322",
+                "reference": "6aacf6dbf15468627c2877a3f0cc179a38520322",
                 "shasum": ""
             },
             "require": {
@@ -763,20 +763,20 @@
                 }
             ],
             "description": "Resource query responsibility segregation",
-            "time": "2018-05-23T15:44:38+00:00"
+            "time": "2018-05-25T12:40:17+00:00"
         },
         {
             "name": "bear/resource",
-            "version": "1.9.4",
+            "version": "1.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.Resource.git",
-                "reference": "25fd1d2de847c516cfa2d9afa8356a1cfc8424d6"
+                "reference": "e96f66cadf73844e3008a9b9116758dfb0560f09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.Resource/zipball/25fd1d2de847c516cfa2d9afa8356a1cfc8424d6",
-                "reference": "25fd1d2de847c516cfa2d9afa8356a1cfc8424d6",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.Resource/zipball/e96f66cadf73844e3008a9b9116758dfb0560f09",
+                "reference": "e96f66cadf73844e3008a9b9116758dfb0560f09",
                 "shasum": ""
             },
             "require": {
@@ -828,7 +828,7 @@
                 "protocol",
                 "rest"
             ],
-            "time": "2018-05-19T12:15:21+00:00"
+            "time": "2018-05-26T05:32:47+00:00"
         },
         {
             "name": "bear/streamer",
@@ -2271,16 +2271,16 @@
         },
         {
             "name": "ray/aop",
-            "version": "2.7.2",
+            "version": "2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.Aop.git",
-                "reference": "b6e3bbd823ce5a79be238784dd3292aad73bab92"
+                "reference": "b00ad974bea9ac6ac073d6a897b701c7f009a9a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.Aop/zipball/b6e3bbd823ce5a79be238784dd3292aad73bab92",
-                "reference": "b6e3bbd823ce5a79be238784dd3292aad73bab92",
+                "url": "https://api.github.com/repos/ray-di/Ray.Aop/zipball/b00ad974bea9ac6ac073d6a897b701c7f009a9a3",
+                "reference": "b00ad974bea9ac6ac073d6a897b701c7f009a9a3",
                 "shasum": ""
             },
             "require": {
@@ -2319,7 +2319,7 @@
             "keywords": [
                 "aop"
             ],
-            "time": "2018-05-08T15:15:46+00:00"
+            "time": "2018-05-25T09:19:16+00:00"
         },
         {
             "name": "ray/aura-session-module",
@@ -4960,7 +4960,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -5023,7 +5023,7 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -5091,16 +5091,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "c5d5cd9756d52b642a294c93a5c3a40a3bcc424b"
+                "reference": "4b272d65e9c0d2d40e2d23bab3c7a184ad4a3a18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/c5d5cd9756d52b642a294c93a5c3a40a3bcc424b",
-                "reference": "c5d5cd9756d52b642a294c93a5c3a40a3bcc424b",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/4b272d65e9c0d2d40e2d23bab3c7a184ad4a3a18",
+                "reference": "4b272d65e9c0d2d40e2d23bab3c7a184ad4a3a18",
                 "shasum": ""
             },
             "require": {
@@ -5158,11 +5158,11 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-21T10:09:47+00:00"
+            "time": "2018-05-25T11:57:52+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -5225,7 +5225,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -5275,7 +5275,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -5324,7 +5324,7 @@
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
@@ -5547,7 +5547,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -5596,7 +5596,7 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
