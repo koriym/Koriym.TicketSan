@@ -1,5 +1,13 @@
 # Koriym.TicketSan
 
+This is minimum API / Web application for BEAR.Sunday.
+ 
+  * RESTful API
+  * Smart cache invalidation (not TTL based)
+  * Web form validation
+  * PHPunit test
+  * [DB query object](https://github.com/ray-di/Ray.AuraSqlModule) injection
+
 # Installation
 
     composer install
@@ -53,7 +61,7 @@ Get all tickets
 php bootstrap/api.php get 'app://self/tickets'
 ```
 
-## Web-API
+## REST API
 
 ```
 composer run serve-api --timeout=0
@@ -61,23 +69,23 @@ composer run serve-api --timeout=0
 
 Serve API document for human
 ```
-http://localhost:8081/rels/ 
+http://127.0.0.1:8081/rels/ 
 ```
 
 CURIes
  
 ```
-curl -i -X GET http://localhost:8081/
+curl -i -X GET http://127.0.0.1:8081/
 ```
 
 POST ticket
 ```
-curl -i -X POST http://localhost:8081/ticket -d 'title=title1'
+curl -i -X POST http://127.0.0.1:8081/ticket -d 'title=title1'
 ```
 
 ```
 HTTP/1.1 201 Created
-Host: localhost:8081
+Host: 127.0.0.1:8081
 Date: Sun, 18 Feb 2018 03:32:42 +0100
 Connection: close
 X-Powered-By: PHP/7.1.10
@@ -87,12 +95,12 @@ content-type: application/hal+json
 
 GET ticket
 ```
-curl -i -X GET http://localhost:8081/tickets/18
+curl -i -X GET http://127.0.0.1:8081/tickets/18
 ```
 
 ```
 HTTP/1.1 200 OK
-Host: localhost:8081
+Host: 127.0.0.1:8081
 Date: Sun, 18 Feb 2018 03:33:26 +0100
 Connection: close
 X-Powered-By: PHP/7.1.10
@@ -118,13 +126,13 @@ content-type: application/hal+json
 }
 ```
 
-## HTML App
+## HTML
 
 ```
 composer run serve --timeout=0
 ```
 
-Request [http://localhost:8080/](http://localhost:8080/)
+Request [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
 
 ### QA
 
