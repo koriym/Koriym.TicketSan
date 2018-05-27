@@ -31,7 +31,7 @@ class Create extends ResourceObject
     }
 
     /**
-     * @FormValidation(onFailure="onFailed")
+     * @FormValidation
      * @Link(rel="create", method="post", href="app://self/ticket"))
      */
     public function onPost(
@@ -48,7 +48,7 @@ class Create extends ResourceObject
         return $this;
     }
 
-    public function onFailed(
+    public function onPostValidationFailed(
         string $title,
         string $description,
         string $assignee
