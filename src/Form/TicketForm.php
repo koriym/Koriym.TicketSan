@@ -43,11 +43,20 @@ class TicketForm extends AbstractForm
         $this->filter->useFieldMessage('title', 'Min 3 Characters required');
     }
 
+    public function __toString()
+    {
+        try {
+            return $this->toString();
+        } catch (\Exception $e) {
+            trigger_error($e->getMessage() . PHP_EOL . $e->getTraceAsString(), E_USER_ERROR);
+        }
+    }
+
     /**
      * @throws \Aura\Html\Exception\HelperNotFound
      * @throws \Aura\Input\Exception\NoSuchInput
      */
-    public function __toString()
+    public function  toString()
     {
         $form = $this->form([
             'method' => 'post',
