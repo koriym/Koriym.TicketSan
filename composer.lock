@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1cf79386fb33a7c14b18102b3abec81f",
+    "content-hash": "b4706e6d90e81e443fc7eecaac38f261",
     "packages": [
         {
             "name": "aura/cli",
@@ -2557,24 +2557,25 @@
         },
         {
             "name": "ray/web-form-module",
-            "version": "0.5.5",
+            "version": "0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.WebFormModule.git",
-                "reference": "9972d0fabed21b247f7aa2eae4b7e5f3071ac2a0"
+                "reference": "4b6d33adb4a5c285278a068f3e7a5afdc4e680d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.WebFormModule/zipball/9972d0fabed21b247f7aa2eae4b7e5f3071ac2a0",
-                "reference": "9972d0fabed21b247f7aa2eae4b7e5f3071ac2a0",
+                "url": "https://api.github.com/repos/ray-di/Ray.WebFormModule/zipball/4b6d33adb4a5c285278a068f3e7a5afdc4e680d9",
+                "reference": "4b6d33adb4a5c285278a068f3e7a5afdc4e680d9",
                 "shasum": ""
             },
             "require": {
-                "aura/filter": "^2.3",
-                "aura/html": "^2.4",
+                "aura/filter": "^2.3|3.x-dev",
+                "aura/html": "^2.5",
                 "aura/input": "^1.2",
-                "ray/aura-session-module": "^1.0",
-                "ray/di": "^2.5"
+                "php": ">=7.0.0",
+                "ray/aura-session-module": "^1.1",
+                "ray/di": "^2.7"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7.13"
@@ -2594,7 +2595,7 @@
                 "Ray.Di module",
                 "web form"
             ],
-            "time": "2017-05-22T04:41:31+00:00"
+            "time": "2018-05-27T17:34:13+00:00"
         },
         {
             "name": "ray/web-param-module",

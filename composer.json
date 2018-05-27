@@ -10,7 +10,7 @@
         "josegonzalez/dotenv": "^2.1",
         "ray/aura-sql-module": "^1.6",
         "madapaja/twig-module": "^2.0",
-        "ray/web-form-module": "^0.5.5",
+        "ray/web-form-module": "^0.6",
         "koriym/now": "^1.0",
         "koriym/http-constants": "^1.0",
         "bear/aura-router-module": "^2.0",

@@ -3,8 +3,9 @@ namespace Koriym\TicketSan\Form;
 
 use Aura\Html\Helper\Tag;
 use Ray\WebFormModule\AbstractForm;
+use Ray\WebFormModule\ToStringInterface;
 
-class TicketForm extends AbstractForm
+class TicketForm extends AbstractForm implements ToStringInterface
 {
     /**
      * {@inheritdoc}
@@ -43,20 +44,11 @@ class TicketForm extends AbstractForm
         $this->filter->useFieldMessage('title', 'Min 3 Characters required');
     }
 
-    public function __toString()
-    {
-        try {
-            return $this->toString();
-        } catch (\Exception $e) {
-            trigger_error($e->getMessage() . PHP_EOL . $e->getTraceAsString(), E_USER_ERROR);
-        }
-    }
-
     /**
      * @throws \Aura\Html\Exception\HelperNotFound
      * @throws \Aura\Input\Exception\NoSuchInput
      */
-    public function  toString()
+    public function  toString() : string
     {
         $form = $this->form([
             'method' => 'post',
